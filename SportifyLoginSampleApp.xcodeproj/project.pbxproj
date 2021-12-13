@@ -62,7 +62,6 @@
 				B99857081ACE927AF171862A /* Pods-SportifyLoginSampleApp.debug.xcconfig */,
 				7185056476F474281DCE66DB /* Pods-SportifyLoginSampleApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

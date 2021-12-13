@@ -219,8 +219,17 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2NV-d3-csF">
-                                <rect key="frame" x="174" y="501" width="67" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6A-bN-ezF">
+                                <rect key="frame" x="157" y="488" width="100.5" height="31"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="비밀번호 변경"/>
+                                <connections>
+                                    <action selector="resetPasswordButtonTapped:" destination="dgI-eF-jbc" eventType="touchUpInside" id="M0N-eu-Lh9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2NV-d3-csF">
+                                <rect key="frame" x="175.5" y="539" width="63" height="34"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="tintColor" systemColor="tintColor"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -237,11 +246,14 @@
                         <constraints>
                             <constraint firstItem="PKR-Ib-ndc" firstAttribute="centerX" secondItem="AOn-X9-bcb" secondAttribute="centerX" id="7V8-5m-Hju"/>
                             <constraint firstItem="PKR-Ib-ndc" firstAttribute="centerY" secondItem="AOn-X9-bcb" secondAttribute="centerY" id="J7o-PU-uVX"/>
+                            <constraint firstItem="2NV-d3-csF" firstAttribute="top" secondItem="G6A-bN-ezF" secondAttribute="bottom" constant="20" id="KBs-km-Q1J"/>
                             <constraint firstItem="2NV-d3-csF" firstAttribute="centerX" secondItem="AOn-X9-bcb" secondAttribute="centerX" id="YGK-TA-5Mj"/>
-                            <constraint firstItem="2NV-d3-csF" firstAttribute="top" secondItem="PKR-Ib-ndc" secondAttribute="bottom" constant="20" id="rh8-aT-ci6"/>
+                            <constraint firstItem="G6A-bN-ezF" firstAttribute="centerX" secondItem="AOn-X9-bcb" secondAttribute="centerX" id="gk0-3O-OTy"/>
+                            <constraint firstItem="G6A-bN-ezF" firstAttribute="top" secondItem="PKR-Ib-ndc" secondAttribute="bottom" constant="20" id="ta0-JB-adz"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="resetPasswordButton" destination="G6A-bN-ezF" id="qSK-Sl-ZTF"/>
                         <outlet property="welcomeLabel" destination="PKR-Ib-ndc" id="XtW-WJ-hxY"/>
                     </connections>
                 </viewController>
